@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <script>
+        let userName = prompt("Tên đăng nhập:", '');
+        let password = prompt("Mật khẩu:", '')
+        if (userName == 'Admin') {
+            if (password == 'Admin') {
+                alert('Chào Hiệu dz')
+            }
+            else{
+                alert('Mật khẩu sai')
+            }
+            window.stop();
+        } else if (userName != "Admin") {
+            alert('Tên đăng nhập không tồn tại');
+            window.stop();
+        } else {
+            alert("I don't know you");
+            window.stop();
+        }
+    </script>
+    
+</body>
+
+</html>
